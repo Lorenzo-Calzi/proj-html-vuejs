@@ -6,4 +6,10 @@
     body{
         font-family: 'Roboto Slab', serif;
     }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

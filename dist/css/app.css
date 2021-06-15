@@ -7,6 +7,11 @@
 * body {
   font-family: "Roboto Slab", serif;
 }
+* .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #site_header {
   width: 100%;
@@ -65,7 +70,7 @@
 .jumbotron {
   width: 100%;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   /* Slogan */
   /* Slogan */
   /* Count Down */
@@ -217,3 +222,24 @@
     }
 
 } */
+.sign {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 200px;
+}
+.sign .flex {
+  width: 50%;
+}
+.sign .flex .left_sign h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+.sign .flex .left_sign img {
+  margin-top: 30px;
+  padding-left: 100px;
+}
+.sign .right_sign {
+  width: 50%;
+  line-height: 30px;
+}
