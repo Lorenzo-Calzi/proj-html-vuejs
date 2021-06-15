@@ -39,18 +39,21 @@
             bottom: 0;
         }
         .menu{
-            height: 300px;
             width: 70px;
             background-color: white;
             position: absolute;
             right: 0;
             margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             i{
                 display: block;
                 text-align: center;
                 font-size: 30px;
                 margin: 20px;
+                color: rgba(88, 88, 88, 1);
             }
         }
     }

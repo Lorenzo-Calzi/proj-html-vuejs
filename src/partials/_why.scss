@@ -1,0 +1,39 @@
+.why{
+    height: 500px;
+
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .why_cards{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .why_card{
+            display: flex;
+            margin: 15px;
+            border-left: 4px solid rgba(242, 185, 59, 1);
+            padding: 50px 30px;
+            box-shadow: 1px 3px 10px 5px rgba(237, 237, 237, 1);
+
+            i{
+                font-size: 60px;
+                padding: 10px 40px 0px 10px;
+                color: rgba(242, 187, 36, 1);
+            }
+
+            h4{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            p{
+                line-height: 30px;
+            }
+        }
+    }
+}

@@ -383,16 +383,54 @@
   bottom: 0;
 }
 .bg_book .right_book .menu {
-  height: 300px;
   width: 70px;
   background-color: white;
   position: absolute;
   right: 0;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bg_book .right_book .menu i {
   display: block;
   text-align: center;
   font-size: 30px;
   margin: 20px;
+  color: #585858;
+}
+
+.why {
+  height: 500px;
+}
+.why h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.why .why_cards {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.why .why_cards .why_card {
+  display: flex;
+  margin: 15px;
+  border-left: 4px solid #f2b93b;
+  padding: 50px 30px;
+  box-shadow: 1px 3px 10px 5px #ededed;
+}
+.why .why_cards .why_card i {
+  font-size: 60px;
+  padding: 10px 40px 0px 10px;
+  color: #f2bb24;
+}
+.why .why_cards .why_card h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.why .why_cards .why_card p {
+  line-height: 30px;
 }
