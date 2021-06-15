@@ -1,7 +1,7 @@
 .jumbotron{
     width: 100%;
     position: relative;
-    background-color: red;
+    margin-bottom: 300px;
 
     .bg_img{
         background-image: url('/dist/img/slide-1.jpg');
@@ -10,19 +10,150 @@
         background-repeat: no-repeat;
     }
 
+    /* Slogan */
     .slogan{
         position: absolute;
-        top: 40%;
-        left: 60%;
+        top: 50%;
+        left: 61%;
         transform: translate(-50%, -50%);
 
         h1{
-            font-size: 60px;
+            font-size: 70px;
+            line-height: 70px;
 
             strong{
                 color: $senape;
             }
         }
+
+        .paragraph_jumbo{
+            margin-top: 30px;
+
+            p{
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+    /* Slogan */
+
+    /* Count Down */
+    .count_down{
+        width: 80%;
+        position: absolute;
+        display: flex;
+        bottom: -270px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $senape;
+        border-radius: 15px;
+        padding: 50px;
+        
+        .left_cd{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                display: block;
+                font-size: 35px;  
+                font-weight: 500;
+                margin-bottom: 20px;
+                
+                strong{
+                    color: $white;
+                }
+            }
+
+            input{
+                padding: 20px;
+                width: 600px;
+                border-radius: 30px;
+                border: none;
+                outline: none;
+                box-shadow: 1px 1px 5px 1px rgb(163, 163, 163);
+            }
+        }
+
+        .right_cd{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .timer{
+                display: flex;
+
+                .time{
+                    text-align: center;
+
+                    span{
+                        font-size: 100px;
+                        padding: 30px;
+                        color: $white;
+                    }
+                    h5{
+                        font-size: 25px;
+                    }
+                }
+            }   
+        }  
+    }
+    /* /Count Down */
+
+}
+
+
+
+
+
+/* 
+@media screen and (max-width:1399px){
+    .bg_img{
+        height: 700px;
+    }
+
+    .slogan{
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 30px;
     }
 
 }
+
+@media screen and (min-width:1400px) {
+
+    .bg_img{
+        height: 900px;
+    }
+
+    .slogan{
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+} */

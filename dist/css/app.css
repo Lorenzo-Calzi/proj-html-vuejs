@@ -65,7 +65,11 @@
 .jumbotron {
   width: 100%;
   position: relative;
-  background-color: red;
+  margin-bottom: 300px;
+  /* Slogan */
+  /* Slogan */
+  /* Count Down */
+  /* /Count Down */
 }
 .jumbotron .bg_img {
   background-image: url("/dist/img/slide-1.jpg");
@@ -75,13 +79,125 @@
 }
 .jumbotron .slogan {
   position: absolute;
-  top: 40%;
-  left: 60%;
+  top: 50%;
+  left: 61%;
   transform: translate(-50%, -50%);
 }
 .jumbotron .slogan h1 {
-  font-size: 60px;
+  font-size: 70px;
+  line-height: 70px;
 }
 .jumbotron .slogan h1 strong {
   color: #f3c035;
 }
+.jumbotron .slogan .paragraph_jumbo {
+  margin-top: 30px;
+}
+.jumbotron .slogan .paragraph_jumbo p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.jumbotron .count_down {
+  width: 80%;
+  position: absolute;
+  display: flex;
+  bottom: -270px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f3c035;
+  border-radius: 15px;
+  padding: 50px;
+}
+.jumbotron .count_down .left_cd {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron .count_down .left_cd span {
+  display: block;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.jumbotron .count_down .left_cd span strong {
+  color: white;
+}
+.jumbotron .count_down .left_cd input {
+  padding: 20px;
+  width: 600px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 5px 1px #a3a3a3;
+}
+.jumbotron .count_down .right_cd {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron .count_down .right_cd .timer {
+  display: flex;
+}
+.jumbotron .count_down .right_cd .timer .time {
+  text-align: center;
+}
+.jumbotron .count_down .right_cd .timer .time span {
+  font-size: 100px;
+  padding: 30px;
+  color: white;
+}
+.jumbotron .count_down .right_cd .timer .time h5 {
+  font-size: 25px;
+}
+
+/* 
+@media screen and (max-width:1399px){
+    .bg_img{
+        height: 700px;
+    }
+
+    .slogan{
+        top: 50%;
+        left: 61%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+
+    .bg_img{
+        height: 900px;
+    }
+
+    .slogan{
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+} */

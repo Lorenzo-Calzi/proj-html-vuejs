@@ -3,4 +3,5 @@ mix
 .js('src/app.js', 'js')
 .sass('src/app.scss', 'css')
 .copyDirectory('src/img', 'dist/img') 
+/* .options({ processCssUrls: false }) */
 .setPublicPath('dist');
