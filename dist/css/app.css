@@ -61,3 +61,27 @@
 #site_header nav .right_header .icons i {
   margin: 5px;
 }
+
+.jumbotron {
+  width: 100%;
+  position: relative;
+  background-color: red;
+}
+.jumbotron .bg_img {
+  background-image: url("/dist/img/slide-1.jpg");
+  background-size: cover;
+  height: 900px;
+  background-repeat: no-repeat;
+}
+.jumbotron .slogan {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.jumbotron .slogan h1 {
+  font-size: 60px;
+}
+.jumbotron .slogan h1 strong {
+  color: #f3c035;
+}
