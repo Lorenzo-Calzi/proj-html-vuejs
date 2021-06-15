@@ -1,0 +1,47 @@
+#site_header{
+    width: 100%;
+    color: $text_primaty;
+
+    nav{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0 40px 0;
+
+        img{
+            height: 45px;
+        }
+
+        .right_header{
+            display: flex;
+            align-items: center;
+
+            ul{
+                list-style: none;
+    
+                li{
+                    display: inline-block;
+                    margin: 15px;
+                    padding-bottom: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border-bottom: 1px solid $senape;
+                }
+            }
+
+            .icons{
+                font-size: 20px;
+                margin-left: 50px;
+
+                i{
+                    margin: 5px;
+                }
+            }
+
+            
+        }
+        
+    }
+}
