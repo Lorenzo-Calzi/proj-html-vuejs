@@ -343,3 +343,56 @@
 .courses button:hover {
   cursor: pointer;
 }
+
+.bg_book {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/slider_1-1917x607-1914x606.jpg");
+  background-size: cover;
+  display: flex;
+  position: relative;
+  margin-bottom: 100px;
+}
+.bg_book .left_book {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bg_book .left_book h3 {
+  color: #f2b91e;
+  font-size: 40px;
+}
+.bg_book .left_book p {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 40px;
+}
+.bg_book .left_book img {
+  margin-top: 20px;
+}
+.bg_book .right_book {
+  width: 50%;
+  position: relative;
+}
+.bg_book .right_book img {
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+}
+.bg_book .right_book .menu {
+  height: 300px;
+  width: 70px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  margin-top: 50px;
+}
+.bg_book .right_book .menu i {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
