@@ -401,7 +401,7 @@
 }
 
 .why {
-  height: 500px;
+  padding-bottom: 100px;
 }
 .why h2 {
   font-size: 40px;
@@ -413,7 +413,6 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .why .why_cards .why_card {
   display: flex;
@@ -433,4 +432,31 @@
 }
 .why .why_cards .why_card p {
   line-height: 30px;
+}
+
+.bg_data {
+  height: 550px;
+  background-image: url("../img/counter-1919x1101.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.bg_data .data {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+.bg_data .data i {
+  font-size: 45px;
+  margin-right: 20px;
+  color: white;
+}
+.bg_data .data span {
+  color: #f2bb24;
+  font-size: 35px;
+  font-weight: 600;
+}
+.bg_data .data h5 {
+  color: white;
 }

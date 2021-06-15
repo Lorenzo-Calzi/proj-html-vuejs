@@ -1,5 +1,5 @@
 .why{
-    height: 500px;
+    padding-bottom: 100px;
 
     h2{
         font-size: 40px;
@@ -12,7 +12,6 @@
         margin: auto;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
 
         .why_card{
             display: flex;
