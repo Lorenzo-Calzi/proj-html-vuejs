@@ -13,13 +13,14 @@
     /* Slogan */
     .slogan{
         position: absolute;
-        top: 50%;
-        left: 61%;
-        transform: translate(-50%, -50%);
+        top: 30%;
+        padding-left: 1000px;
+        /* left: 65%;
+        transform: translate(-50%, -50%); */
 
         h1{
-            font-size: 70px;
-            line-height: 70px;
+            font-size: 80px;
+            line-height: 80px;
 
             strong{
                 color: $senape;
@@ -30,8 +31,9 @@
             margin-top: 30px;
 
             p{
-                font-size: 18px;
-                line-height: 30px;
+                font-size: 21px;
+                line-height: 35px;
+                color: rgb(54, 54, 54);
             }
         }
     }

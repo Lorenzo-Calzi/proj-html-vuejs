@@ -8,10 +8,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 0 40px 0;
+        padding: 30px 0 30px 0;
 
         img{
             height: 45px;
+            cursor: pointer;
         }
 
         .right_header{
@@ -20,20 +21,30 @@
 
             ul{
                 list-style: none;
+                position: relative;
     
                 li{
                     display: inline-block;
-                    position: relative;
                     margin: 15px;
                     padding-bottom: 10px;
                     font-size: 20px;
                     font-weight: 500;
+                    border-bottom: 1px solid $white;
 
                     &:hover{
                         cursor: pointer;
                         border-bottom: 1px solid $senape;
                     }
                 }
+                i{
+                    font-size: 10px;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50px;
+                    color: $senape;
+                    display: none;
+                }
+
             }
 
             .bedge_header{
@@ -52,8 +63,10 @@
             .icons{
                 font-size: 20px;
                 margin-left: 50px;
+                padding-bottom: 5px;
 
                 i{
+                    cursor: pointer;
                     margin: 5px;
                 }
             }

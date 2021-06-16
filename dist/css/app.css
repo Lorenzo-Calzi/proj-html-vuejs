@@ -23,10 +23,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 40px 0;
+  padding: 30px 0 30px 0;
 }
 #site_header nav img {
   height: 45px;
+  cursor: pointer;
 }
 #site_header nav .right_header {
   display: flex;
@@ -34,18 +35,27 @@
 }
 #site_header nav .right_header ul {
   list-style: none;
+  position: relative;
 }
 #site_header nav .right_header ul li {
   display: inline-block;
-  position: relative;
   margin: 15px;
   padding-bottom: 10px;
   font-size: 20px;
   font-weight: 500;
+  border-bottom: 1px solid white;
 }
 #site_header nav .right_header ul li:hover {
   cursor: pointer;
   border-bottom: 1px solid #f3c035;
+}
+#site_header nav .right_header ul i {
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  color: #f3c035;
+  display: none;
 }
 #site_header nav .right_header .bedge_header {
   border-radius: 5px;
@@ -62,8 +72,10 @@
 #site_header nav .right_header .icons {
   font-size: 20px;
   margin-left: 50px;
+  padding-bottom: 5px;
 }
 #site_header nav .right_header .icons i {
+  cursor: pointer;
   margin: 5px;
 }
 
@@ -84,13 +96,14 @@
 }
 .jumbotron .slogan {
   position: absolute;
-  top: 50%;
-  left: 61%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  padding-left: 1000px;
+  /* left: 65%;
+  transform: translate(-50%, -50%); */
 }
 .jumbotron .slogan h1 {
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 80px;
+  line-height: 80px;
 }
 .jumbotron .slogan h1 strong {
   color: #f3c035;
@@ -99,8 +112,9 @@
   margin-top: 30px;
 }
 .jumbotron .slogan .paragraph_jumbo p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 21px;
+  line-height: 35px;
+  color: #363636;
 }
 .jumbotron .count_down {
   width: 1500px;
