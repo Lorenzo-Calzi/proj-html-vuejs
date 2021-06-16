@@ -63,6 +63,8 @@ var app = new Vue({
   methods: {},
   mounted: function mounted() {}
 });
+/* CountDown FUnction */
+
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 var x = setInterval(function () {
   var now = new Date().getTime();

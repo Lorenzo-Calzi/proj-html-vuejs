@@ -75,13 +75,16 @@
                 margin-top: 30px;
 
                 input{
-                    padding: 23px;
+                    padding: 24px;
                     width: 600px;
                     border-radius: 40px;
                     border: none;
-                    outline: none;                
+                    outline: none; 
+                    font-family: 'Roboto Slab', serif;   
+                    box-shadow: 1px 1px 5px 1px rgb(160, 160, 160);            
                 }
                 h5{
+                    font-size: 17px;
                     border-radius: 40px;
                     padding: 22px 30px;
                     position: absolute;
@@ -90,7 +93,7 @@
                     color: $white;
                     text-transform: uppercase;
                     font-weight: 400;  
-                    cursor: pointer; 
+                    cursor: pointer;
                 }
             }     
         }

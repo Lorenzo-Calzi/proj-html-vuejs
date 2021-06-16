@@ -161,13 +161,16 @@
   margin-top: 30px;
 }
 .jumbotron .count_down .left_cd .subscribe input {
-  padding: 23px;
+  padding: 24px;
   width: 600px;
   border-radius: 40px;
   border: none;
   outline: none;
+  font-family: "Roboto Slab", serif;
+  box-shadow: 1px 1px 5px 1px #a0a0a0;
 }
 .jumbotron .count_down .left_cd .subscribe h5 {
+  font-size: 17px;
   border-radius: 40px;
   padding: 22px 30px;
   position: absolute;

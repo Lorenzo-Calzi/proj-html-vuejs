@@ -34,8 +34,16 @@
                     </ul> -->
 
                     <ul v-for="item in headerList">
-                        <li>{{item.li}} <i class="fas fa-sort-up"></i></li>  
-                        
+                        <li v-if="item.li === 'Add Course'">
+                            {{item.li}} 
+                            <i class="fas fa-sort-up"></i>
+                            <span class="bedge_header">NEW</span>
+                        </li>  
+
+                        <li v-else>
+                            {{item.li}} 
+                            <i class="fas fa-sort-up"></i>
+                        </li>
                     </ul>
 
                     <!-- <ul class="icons" v-for="item in headerIcon">
