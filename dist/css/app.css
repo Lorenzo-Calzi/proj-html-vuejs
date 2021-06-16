@@ -562,23 +562,27 @@
   margin-bottom: 25px;
 }
 #site_footer .content_footer .section_content .footer_paragraph {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #site_footer .content_footer .section_content .footer_paragraph p {
-  width: 250px;
+  font-size: 15px;
+  width: 270px;
   line-height: 25px;
 }
 #site_footer .content_footer .section_content i {
   font-size: 23px;
-  margin-right: 10px;
+  margin: 15px 10px 0px 0px;
   cursor: pointer;
 }
-#site_footer .content_footer .section_content .footer_list ul {
+#site_footer .content_footer .section_content .footer_list {
   display: flex;
-  flex-direction: column;
-  margin: 0px 20px 0 20px;
+  justify-content: space-between;
+}
+#site_footer .content_footer .section_content .footer_list ul {
+  margin: 0px 10px 0 20px;
 }
 #site_footer .content_footer .section_content .footer_list ul li {
+  width: 130px;
   margin-bottom: 20px;
 }
 #site_footer .content_footer .section_content .footer_list ul li:hover {

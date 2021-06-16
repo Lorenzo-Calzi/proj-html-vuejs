@@ -44,16 +44,18 @@ var app = new Vue({
     }, {
       p: 'info@masterstudy.com'
     }],
-    footerList: [{
+    firstRowList: [{
       li: 'Blog'
     }, {
+      li: 'Courses'
+    }],
+    secondRowList: [{
       li: 'Home'
     }, {
-      li: 'Shortcodes'
-    }, {
-      li: 'Courses'
-    }, {
       li: 'Membership A...'
+    }],
+    ThirdRowList: [{
+      li: 'Shortcodes'
     }, {
       li: 'Typography'
     }]

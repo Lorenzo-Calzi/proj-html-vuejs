@@ -31,13 +31,19 @@ const app = new Vue({
             { p: 'info@masterstudy.com'},
         ],
 
-        footerList: [
+        firstRowList: [
             { li: 'Blog'},
-            { li: 'Home'},
-            { li: 'Shortcodes'},
             { li: 'Courses'},
+        ],
+
+        secondRowList: [
+            { li: 'Home'},
             { li: 'Membership A...'},
-            { li: 'Typography'}
+        ],
+
+        ThirdRowList: [
+            { li: 'Shortcodes'},
+            { li: 'Typography'},
         ],
 
 
