@@ -546,10 +546,9 @@
   margin-right: 10px;
   cursor: pointer;
 }
-#site_footer .content_footer .section_content .footer_list {
-  display: flex;
-}
 #site_footer .content_footer .section_content .footer_list ul {
+  display: flex;
+  flex-direction: column;
   margin: 0px 20px 0 20px;
 }
 #site_footer .content_footer .section_content .footer_list ul li {

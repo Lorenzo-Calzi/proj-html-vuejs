@@ -13,540 +13,543 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header id="site_header">
-        <nav>
-            <div>
-                <img src="./dist/img/MasterStudy-1.svg" alt="">
-            </div>
-
-            <div class="right_header">
-                <ul>
-                    <li>Courses</li>
-                    <li>Curse Formats</li>
-                    <li>Add Course <span class="bedge_header">NEW</span></li>
-                    <li>Pages</li>
-                    <li>Demos</li>
-                </ul>
-                
-                <div class="icons">
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
+    <div id="app">
+        
+        <!-- HEADER -->
+        <header id="site_header">
+            <nav>
+                <div>
+                    <img src="./dist/img/MasterStudy-1.svg" alt="">
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- /HEADER -->
 
-    <!-- MAIN -->
-    <main id="site_main">
+                <div class="right_header">
 
-        <!-- Prima Sezione -->
-        <section>
-            <div class="jumbotron">
+                   <!--  <ul>
+                        <li>Courses</li>
+                        <li>Curse Formats</li>
+                        <li>Add Course <span class="bedge_header">NEW</span></li>
+                        <li>Pages</li>
+                        <li>Demos</li>
+                    </ul> -->
 
-                <!-- Background Image -->
-                <div class="bg_img">
+                    <ul v-for="item in headerList">
+                        <li>{{item.li}}</li>
+                    </ul>
 
-                    <!-- Slogan -->
-                    <div class="slogan">
-                        <h1>Start your Human</h1>
-                        <h1><strong>Revolution</strong> today</h1>
-
-                        <div class="paragraph_jumbo">
-                            <p>A wonderful serenity has taken possession of my entire soul, like</p>
-                            <p>these sweet mornings of spring which I enjoy with my whole heart.</p>
-                        </div> 
+                    <!-- <ul class="icons" v-for="item in headerIcon">
+                        <li>{{i}}</li>
+                    </ul> -->
+                    
+                    <div class="icons">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
                     </div>
-                    <!-- /Slogan -->
+                </div>
+            </nav>
+        </header>
+        <!-- /HEADER -->
 
-                    <!-- Count Down -->
-                    <div class="count_down">
-                        <div class="left_cd">
-                            <div>
-                                <span><strong>Limited Sale:</strong> All courses with 55% off</span>
+        <!-- MAIN -->
+        <main id="site_main">
 
-                                <div class="subscribe">
-                                    <input type="text" placeholder="Enter your E-mail"> 
-                                    <h5>Subscribe</h5>
+            <!-- Prima Sezione -->
+            <section>
+                <div class="jumbotron">
+
+                    <!-- Background Image -->
+                    <div class="bg_img">
+
+                        <!-- Slogan -->
+                        <div class="slogan">
+                            <h1>Start your Human</h1>
+                            <h1><strong>Revolution</strong> today</h1>
+
+                            <div class="paragraph_jumbo">
+                                <p>A wonderful serenity has taken possession of my entire soul, like</p>
+                                <p>these sweet mornings of spring which I enjoy with my whole heart.</p>
+                            </div> 
+                        </div>
+                        <!-- /Slogan -->
+
+                        <!-- Count Down -->
+                        <div class="count_down">
+                            <div class="left_cd">
+                                <div>
+                                    <span><strong>Limited Sale:</strong> All courses with 55% off</span>
+
+                                    <div class="subscribe">
+                                        <input type="text" placeholder="Enter your E-mail"> 
+                                        <h5>Subscribe</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right_cd">
+                                <div class="timer">
+                                    <div class="time">
+                                        <span id="days"></span>
+                                        <h5>Days</h5>
+                                    </div>
+
+                                    <div class="time">
+                                        <span id="hours"></span>
+                                        <h5>Hours</h5>
+                                    </div>
+
+                                    <div class="time">
+                                        <span id="minutes"></span>
+                                        <h5>Minutes</h5>
+                                    </div>
+
+                                    <div class="time">
+                                        <span id="seconds"></span>
+                                        <h5>Seconds</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /Count Down -->
+
+
+                    </div>
+                    <!-- /Background Image -->
+
+                </div>
+            </section>
+            <!-- /Prima Sezione -->
+
+            <!-- Seconda Sezione -->
+            <section>
+                <div class="sign">
+                    <div class="flex">
+                        <div class="left_sign">
+                            <h3>Hey there, my name is</h3>
+                            <h3>John Doe. I'm the founder</h3>
+                            <h3>of the brain Academy.</h3>
+                            <img src="./dist/img/sign.jpg" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="right_sign">
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet </p>
+                        <p>mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm </p>
+                        <p>of existence in thi spot, which was created for the bliss of souls like mine. I am so </p>
+                        <p>happy, my dear friend, so absorbed in the exquisite senze of mere tranquil existence, </p>
+                        <p>that I neglect my talents. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my </p>
+                        <p>trees, and but a few stray gleams steal into the inner sanctuary</p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- /Seconda Sezione -->
+
+            <!-- Terza Sezione -->
+            <section>
+                <div class="courses">
+                    <h2>New Courses</h2>
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="hover_price">
+                                <img src="./dist/img/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="">
+                                <span>$59</span>
+                                <strong>SPECIAL</strong>
+                            </div>
+                            <p>How to be a DJ? Make Electronic Music</p>
+                            <span>Electronic</span>
+                            <hr>
+
+                            <div class="info_card">
+                                <div>
+                                    <i class="fas fa-signal"></i> <span>Advanced</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-list-ul"></i><span>8 Lectures</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-clock"></i> <span>6 Hours</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="right_cd">
-                            <div class="timer">
-                                <div class="time">
-                                    <span id="days"></span>
-                                    <h5>Days</h5>
+                        <div class="card">
+                            <div class="hover_price">
+                                <img src="./dist/img/12345-1-370x200.png" alt="">
+                                <span>$69</span>
+                                <strong>SPECIAL</strong>
+                            </div>
+
+                            <p>Nvidia and Ue4 technologies Practice</p>
+                            <span>Nvidia</span>
+                            <hr>
+
+                            <div class="info_card">
+                                <div>
+                                    <i class="fas fa-signal"></i> <span>Advanced</span>
                                 </div>
 
-                                <div class="time">
-                                    <span id="hours"></span>
-                                    <h5>Hours</h5>
+                                <div>
+                                    <i class="fas fa-list-ul"></i> <span>8 Lectures</span>
                                 </div>
 
-                                <div class="time">
-                                    <span id="minutes"></span>
-                                    <h5>Minutes</h5>
-                                </div>
-
-                                <div class="time">
-                                    <span id="seconds"></span>
-                                    <h5>Seconds</h5>
+                                <div>
+                                    <i class="far fa-clock"></i> <span>6 Hours</span>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="card">
+                            <div class="hover_price">
+                                <img src="./dist/img/photo-1491897554428-130a60dd4757-370x200.jpeg" alt="">
+                                <span>$59</span>
+                                <strong>SPECIAL</strong>
+                            </div>
+                            <p>Fashion Photography from professional</p>
+                            <span>Fashion</span>
+                            <hr>
+
+                            <div class="info_card">
+                                <div>
+                                    <i class="fas fa-signal"></i> <span>Advanced</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-clock"></i> <span>6 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <!-- /Count Down -->
 
+                    <div class="cards">
+                        <div class="card">
+                            <div class="hover_price">
+                                <img src="./dist/img/photo-1416339134316-0e91dc9ded92-370x200.jpeg" alt="">
+                                <span>$39</span>
+                            </div>
 
+                            <p>Design Instrumwntal for Communication</p>
+                            <span>Communication</span>
+                            <hr>
+
+                            <div class="info_card">
+                                <div>
+                                    <i class="fas fa-signal"></i> <span>Intermediate</span>
+                                </div>
+                                
+                                <div>
+                                    <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-clock"></i> <span>6 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="hover_price">
+                                <img src="./dist/img/cathryn-lavery-67852-unsplash-370x200.jpg" alt="">
+                                <span>$19</span>
+                            </div>
+
+                            <p>Make your Concept Right and Beautiful</p>
+                            <span>Art</span>
+                            <hr>
+
+                            <div class="info_card">
+                                <div>
+                                    <i class="fas fa-signal"></i> <span>Intermediate</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-clock"></i> <span>6 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="hover_price">
+                                <img src="./dist/img/photo-1475452779376-caebfb988090-370x200.jpeg" alt="">
+                                <span>$29</span>
+                            </div>
+
+                            <p>Road Bike Manual or How to Be a Champion</p>
+                            <span>Bicycling</span>
+                            <hr>
+
+                            <div class="info_card">
+                                <div>
+                                    <i class="fas fa-signal"></i> <span>Advanced</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
+                                </div>
+
+                                <div>
+                                    <i class="far fa-clock"></i> <span>6 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button>LOAD MORE</button>
                 </div>
-                <!-- /Background Image -->
+            </section>
+            <!-- /Terza Sezione -->
 
-            </div>
-        </section>
-        <!-- /Prima Sezione -->
+            <!-- Quarta Sezione -->
+            <section>
+                <div class="bg_book">
+                    <div class="left_book">
+                        <div>
+                            <h3>Get My Exclusive Investing</h3>
+                            <h3 style="margin-bottom: 20px;">Book just for $19.50</h3>
 
-        <!-- Seconda Sezione -->
-        <section>
-            <div class="sign">
-                <div class="flex">
-                    <div class="left_sign">
-                        <h3>Hey there, my name is</h3>
-                        <h3>John Doe. I'm the founder</h3>
-                        <h3>of the brain Academy.</h3>
-                        <img src="./dist/img/sign.jpg" alt="">
+                            <p>Vestibilum imentum eu urna vel cursus. Aenean</p>
+                            <p>vehicula quam quam, vitae pellentesque urna</p>
+                            <p>elementum cursus.</p>
+
+                            <img src="./dist/img/amazon.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="right_book">
+                        <img src="./dist/img/book.png" alt="">
+
+                        <div class="menu">
+                            <i class="fas fa-desktop"></i>
+                            <i class="far fa-life-ring"></i>
+                            <i class="fas fa-wrench"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="right_sign">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet </p>
-                    <p>mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm </p>
-                    <p>of existence in thi spot, which was created for the bliss of souls like mine. I am so </p>
-                    <p>happy, my dear friend, so absorbed in the exquisite senze of mere tranquil existence, </p>
-                    <p>that I neglect my talents. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my </p>
-                    <p>trees, and but a few stray gleams steal into the inner sanctuary</p>
-                </div>
-            </div>
-        </section>
-        <!-- /Seconda Sezione -->
+            </section>
+            <!-- /Quarta Sezione -->
 
-        <!-- Terza Sezione -->
-        <section>
-            <div class="courses">
-                <h2>New Courses</h2>
+            <!-- Quinta Sezione -->
+            <section>
+                <div class="why">
+                    <h2>Why my Courses?</h2>
 
-                <div class="cards">
-                    <div class="card">
-                        <div class="hover_price">
-                            <img src="./dist/img/photo-1496307042754-b4aa456c4a2d-370x200.jpeg" alt="">
-                            <span>$59</span>
-                            <strong>SPECIAL</strong>
-                        </div>
-                        <p>How to be a DJ? Make Electronic Music</p>
-                        <span>Electronic</span>
-                        <hr>
-
-                        <div class="info_card">
+                    <div class="why_cards">
+                        <div class="why_card">
                             <div>
-                                <i class="fas fa-signal"></i> <span>Advanced</span>
+                                <i class="fas fa-briefcase"></i>
                             </div>
 
                             <div>
-                                <i class="fas fa-list-ul"></i><span>8 Lectures</span>
+                                <h4>Entrepreneurship</h4>
+                                <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
+                                <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
+                                <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
+                                <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
                             </div>
-
-                            <div>
-                                <i class="far fa-clock"></i> <span>6 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="hover_price">
-                            <img src="./dist/img/12345-1-370x200.png" alt="">
-                            <span>$69</span>
-                            <strong>SPECIAL</strong>
+                        
                         </div>
 
-                        <p>Nvidia and Ue4 technologies Practice</p>
-                        <span>Nvidia</span>
-                        <hr>
-
-                        <div class="info_card">
+                        <div class="why_card">
                             <div>
-                                <i class="fas fa-signal"></i> <span>Advanced</span>
-                            </div>
-
-                            <div>
-                                <i class="fas fa-list-ul"></i> <span>8 Lectures</span>
-                            </div>
-
-                            <div>
-                                <i class="far fa-clock"></i> <span>6 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="hover_price">
-                            <img src="./dist/img/photo-1491897554428-130a60dd4757-370x200.jpeg" alt="">
-                            <span>$59</span>
-                            <strong>SPECIAL</strong>
-                        </div>
-                        <p>Fashion Photography from professional</p>
-                        <span>Fashion</span>
-                        <hr>
-
-                        <div class="info_card">
-                            <div>
-                                <i class="fas fa-signal"></i> <span>Advanced</span>
-                            </div>
-
-                            <div>
-                                <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
-                            </div>
-
-                            <div>
-                                <i class="far fa-clock"></i> <span>6 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cards">
-                    <div class="card">
-                        <div class="hover_price">
-                            <img src="./dist/img/photo-1416339134316-0e91dc9ded92-370x200.jpeg" alt="">
-                            <span>$39</span>
-                        </div>
-
-                        <p>Design Instrumwntal for Communication</p>
-                        <span>Communication</span>
-                        <hr>
-
-                        <div class="info_card">
-                            <div>
-                                <i class="fas fa-signal"></i> <span>Intermediate</span>
+                                <i class="fas fa-rocket"></i>
                             </div>
                             
                             <div>
-                                <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
+                                <h4>Accelerated learining</h4>
+                                <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
+                                <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
+                                <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
+                                <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why_cards">
+                        <div class="why_card">
+                            <div>
+                                <i class="far fa-thumbs-up"></i>
                             </div>
 
                             <div>
-                                <i class="far fa-clock"></i> <span>6 Hours</span>
+                                <h4>Productivity</h4>
+                                <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
+                                <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
+                                <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
+                                <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="hover_price">
-                            <img src="./dist/img/cathryn-lavery-67852-unsplash-370x200.jpg" alt="">
-                            <span>$19</span>
+                            
                         </div>
 
-                        <p>Make your Concept Right and Beautiful</p>
-                        <span>Art</span>
-                        <hr>
-
-                        <div class="info_card">
+                        <div class="why_card">
                             <div>
-                                <i class="fas fa-signal"></i> <span>Intermediate</span>
+                                <i class="fas fa-cog"></i>
                             </div>
 
                             <div>
-                                <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
-                            </div>
-
-                            <div>
-                                <i class="far fa-clock"></i> <span>6 Hours</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="hover_price">
-                            <img src="./dist/img/photo-1475452779376-caebfb988090-370x200.jpeg" alt="">
-                            <span>$29</span>
-                        </div>
-
-                        <p>Road Bike Manual or How to Be a Champion</p>
-                        <span>Bicycling</span>
-                        <hr>
-
-                        <div class="info_card">
-                            <div>
-                                <i class="fas fa-signal"></i> <span>Advanced</span>
-                            </div>
-
-                            <div>
-                                <i class="fas fa-list-ul"></i> <span>6 Lectures</span>
-                            </div>
-
-                            <div>
-                                <i class="far fa-clock"></i> <span>6 Hours</span>
+                                <h4>Life Coaching</h4>
+                                <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
+                                <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
+                                <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
+                                <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- /Quinta Sezione -->
 
-                <button>LOAD MORE</button>
-            </div>
-        </section>
-        <!-- /Terza Sezione -->
-
-        <!-- Quarta Sezione -->
-        <section>
-            <div class="bg_book">
-                <div class="left_book">
-                    <div>
-                        <h3>Get My Exclusive Investing</h3>
-                        <h3 style="margin-bottom: 20px;">Book just for $19.50</h3>
-
-                        <p>Vestibilum imentum eu urna vel cursus. Aenean</p>
-                        <p>vehicula quam quam, vitae pellentesque urna</p>
-                        <p>elementum cursus.</p>
-
-                        <img src="./dist/img/amazon.png" alt="">
-                    </div>
-                </div>
-
-                <div class="right_book">
-                    <img src="./dist/img/book.png" alt="">
-
-                    <div class="menu">
-                        <i class="fas fa-desktop"></i>
-                        <i class="far fa-life-ring"></i>
-                        <i class="fas fa-wrench"></i>
-                        <i class="fas fa-shopping-cart"></i>
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Quarta Sezione -->
-
-        <!-- Quinta Sezione -->
-        <section>
-            <div class="why">
-                <h2>Why my Courses?</h2>
-
-                <div class="why_cards">
-                    <div class="why_card">
+            <!-- Sesta Sezione -->
+            <section>
+                <div class="bg_data">
+                    <div class="data">
+                        <i class="fas fa-user-friends"></i>
                         <div>
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-
-                        <div>
-                            <h4>Entrepreneurship</h4>
-                            <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
-                            <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
-                            <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
-                            <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
-                        </div>
-                       
-                    </div>
-
-                    <div class="why_card">
-                        <div>
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        
-                        <div>
-                            <h4>Accelerated learining</h4>
-                            <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
-                            <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
-                            <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
-                            <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
+                            <span>3195</span>
+                            <h5>Online Learner</h5>
                         </div>
                     </div>
-                </div>
 
-                <div class="why_cards">
-                    <div class="why_card">
+                    <div class="data">
+                        <i class="fas fa-play"></i>
                         <div>
-                            <i class="far fa-thumbs-up"></i>
-                        </div>
-
-                        <div>
-                            <h4>Productivity</h4>
-                            <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
-                            <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
-                            <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
-                            <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
-                        </div>
-                        
-                    </div>
-
-                    <div class="why_card">
-                        <div>
-                            <i class="fas fa-cog"></i>
-                        </div>
-
-                        <div>
-                            <h4>Life Coaching</h4>
-                            <p>Vestibulum vitae aliquam nunc. Suspending mollis</p>
-                            <p>metus ac tellus egestas pharetra. Suspendisse at viverra</p>
-                            <p>purus. Pellentesque nec posuere ligula, eu congue leo.</p>
-                            <p>Integer vulputate tempor arcu. Vestibulum vulputate</p>
+                            <span>23</span>
+                            <h5>Video Courses</h5>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Quinta Sezione -->
 
-        <!-- Sesta Sezione -->
-        <section>
-            <div class="bg_data">
-                <div class="data">
-                    <i class="fas fa-user-friends"></i>
-                    <div>
-                        <span>3195</span>
-                        <h5>Online Learner</h5>
+                    <div class="data">
+                        <i class="far fa-image"></i>
+                        <div>
+                            <span>437</span>
+                            <h5>Sliders & Images</h5>
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <i class="far fa-thumbs-up"></i>
+                        <div>
+                            <span>1440</span>
+                            <h5>Excellent Reviews</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- /Sesta Sezione -->
+
+            <!-- Settima Sezione -->
+            <section>
+                <div class="students">
+                    <h2>What Students Say</h2>
+
+                    <div class="slider">
+                        <i class="fas fa-arrow-left"></i>
+                        <div class="img_slider">
+                            <img src="./dist/img/1-100x100.jpg" alt="">
+                            <img src="./dist/img/2-100x100.jpg" alt="" style="height: 100px;">
+                            <img src="./dist/img/4-100x100.jpg" alt="">
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <h3>Paints of the Future</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <p>"The response to your MasterStudy has been really overwhelming! Those who participated</p>
+                    <p>in the workshop are spreading the word here on campus and the "buzz" si on. The VP pf</p>
+                    <p>Istruction wants yout to come back! Her goal is to have more faculty trainer. She also</p>
+                    <p>wants to attend a workshop herself. Our President told me Masterstudy needs to be the</p>
+                    <p>cornerstone of our success program."</p>
+
+                </div>
+            </section>
+            <!-- /Settima Sezione -->
+
+        </main>
+        <!-- /MAIN -->
+
+        <!-- FOOTER -->
+        <footer id="site_footer">
+            <div class="content_footer">
+                <div class="section_content">
+                    <h3>ABOUT</h3>
+                    <div class="footer_paragraph" v-for="item in footerAbout">
+                        <p>{{item.p}}</p>
+                    </div>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+
+                <div class="section_content">
+                    <h3>CONTACT</h3>
+                    <div class="footer_paragraph" v-for="item in footerContact">
+                        <p>{{item.p}}</p>
                     </div>
                 </div>
 
-                <div class="data">
-                    <i class="fas fa-play"></i>
-                    <div>
-                        <span>23</span>
-                        <h5>Video Courses</h5>
+                <div class="section_content">
+                    <h3>PAGES</h3>
+
+                    <div class="footer_list" v-for="item in footerList">
+                        <ul>
+                            <li>{{item.li}}</li>
+                        </ul>
+
+                       <!--  <ul v-for="item in footerListRight">
+                            <li>{{item.li}}</li>
+                        </ul> -->
                     </div>
+                    
                 </div>
 
-                <div class="data">
-                    <i class="far fa-image"></i>
-                    <div>
-                        <span>437</span>
-                        <h5>Sliders & Images</h5>
-                    </div>
-                </div>
+                <div class="section_content">
+                    <h3>BLOG</h3>
 
-                <div class="data">
-                    <i class="far fa-thumbs-up"></i>
-                    <div>
-                        <span>1440</span>
-                        <h5>Excellent Reviews</h5>
+                    <div class="blog">
+                        <img src="./dist/img/photo-1517520287167-4bbf64a00d66-122x120.jpeg" alt="">
+                        <div>
+                            <p>Our main target is to "Developing Yourself as a Leader"</p>
+                            <span>- August 9, 2018</span>
+                        </div>
                     </div>
+
+                    <div class="blog">
+                        <img src="./dist/img/photo-1490376840453-5f616fbebe5b-75x75.jpeg" alt="">
+                        <div>
+                            <p>Those Other College Expensive You Aren't Thinking About</p>
+                            <span>- June 3, 2015</span>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>
-        </section>
-        <!-- /Sesta Sezione -->
+        </footer>
+        <!-- /FOOTER -->
 
-        <!-- Settima Sezione -->
-        <section>
-            <div class="students">
-                <h2>What Students Say</h2>
-
-                <div class="slider">
-                    <i class="fas fa-arrow-left"></i>
-                    <div class="img_slider">
-                        <img src="./dist/img/1-100x100.jpg" alt="">
-                        <img src="./dist/img/2-100x100.jpg" alt="" style="height: 100px;">
-                        <img src="./dist/img/4-100x100.jpg" alt="">
-                    </div>
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-
-                <h3>Paints of the Future</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-
-                <p>"The response to your MasterStudy has been really overwhelming! Those who participated</p>
-                <p>in the workshop are spreading the word here on campus and the "buzz" si on. The VP pf</p>
-                <p>Istruction wants yout to come back! Her goal is to have more faculty trainer. She also</p>
-                <p>wants to attend a workshop herself. Our President told me Masterstudy needs to be the</p>
-                <p>cornerstone of our success program."</p>
-
-            </div>
-        </section>
-        <!-- /Settima Sezione -->
-
-    </main>
-    <!-- /MAIN -->
-
-    <!-- FOOTER -->
-    <footer id="site_footer">
-        <div class="content_footer">
-            <div class="section_content">
-                <h3>ABOUT</h3>
-                <div class="footer_paragraph">
-                    <p>Masterstudy is Education WordPress theme featured by learning</p>
-                    <p>Management System (LMS) for online education.</p>
-                    <p>Developed by StylemixThemes</p>
-                </div>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
-
-            <div class="section_content">
-                <h3>CONTACT</h3>
-                <div class="footer_paragraph">
-                    <p>USA, California 20, FIrst Avenue,</p>
-                    <p>Calirfornia</p>
-                </div>
-                <div class="footer_paragraph">
-                    <p>Tel.: +1 212 458 300 32</p>
-                    <p>Fax: +1 212 375 24 14</p>
-                </div>
-                <p>info@masterstudy.com</p>
-            </div>
-
-            <div class="section_content">
-                <h3>PAGES</h3>
-
-                <div class="footer_list">
-                    <ul>
-                        <li>Blog</li>
-                        <li>Home</li>
-                        <li>Shortcodes</li>  
-                    </ul>
-                    <ul>
-                        <li>Courses</li>
-                        <li>Membership A...</li>
-                        <li>Typography</li>
-                    </ul>
-                </div>
-                
-            </div>
-
-            <div class="section_content">
-                <h3>BLOG</h3>
-
-                <div class="blog">
-                    <img src="./dist/img/photo-1517520287167-4bbf64a00d66-122x120.jpeg" alt="">
-                    <div>
-                        <p>Our main target is to "Developing Yourself as a Leader"</p>
-                        <span>- August 9, 2018</span>
-                    </div>
-                </div>
-
-                <div class="blog">
-                    <img src="./dist/img/photo-1490376840453-5f616fbebe5b-75x75.jpeg" alt="">
-                    <div>
-                        <p>Those Other College Expensive You Aren't Thinking About</p>
-                        <span>- June 3, 2015</span>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-    </footer>
-    <!-- /FOOTER -->
+    </div>
 
 
     <!-- Vue JS -->
