@@ -421,6 +421,14 @@
   padding: 50px 30px;
   box-shadow: 1px 3px 10px 5px #ededed;
 }
+.why .why_cards .why_card:hover {
+  cursor: pointer;
+  border: none;
+  background-color: #f2bb24;
+}
+.why .why_cards .why_card:hover i {
+  color: white;
+}
 .why .why_cards .why_card i {
   font-size: 60px;
   padding: 10px 40px 0px 10px;
@@ -530,6 +538,7 @@
   margin-bottom: 20px;
 }
 #site_footer .content_footer .section_content .footer_paragraph p {
+  width: 250px;
   line-height: 25px;
 }
 #site_footer .content_footer .section_content i {
@@ -560,6 +569,7 @@
   margin-right: 10px;
 }
 #site_footer .content_footer .blog p {
+  width: 250px;
   font-weight: 600;
 }
 #site_footer .content_footer .blog span {
