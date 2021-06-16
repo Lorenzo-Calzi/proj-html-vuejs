@@ -3,6 +3,8 @@ const app = new Vue({
 
     data: {
 
+        email: '',
+
         headerList: [
             { li: 'Courses'},
             { li: 'Curse Formats'},
@@ -11,11 +13,11 @@ const app = new Vue({
             { li: 'Demos'},
         ],
 
-        /* headerIcon: [
-            { i: <i class="fab fa-linkedin"></i>},
-            { i: <i class="fab fa-instagram"></i>},
-            { i: <i class="fab fa-facebook"></i>},
-            { i: <i class="fab fa-twitter"></i>},
+       /*  headerIcon: [
+            { i: 'fab fa-linkedin'},
+            { i: 'fab fa-instagram'},
+            { i: 'fab fa-facebook'},
+            { i: 'fab fa-twitter'},
         ], */
 
         footerAbout: [
@@ -50,18 +52,27 @@ const app = new Vue({
     },
 
     methods: {
+        subscribe(){
+            if(this.email.length > 3 && this.email.includes('@')){
+                alert('🎉 Grazie per esserti iscritto alla NewsLetter 🎉')
+                this.email = '';
+            } else{
+                alert('L\'email inserita è troppo corta o errata! Inseriscine una valida');
+                this.email = '';
+            }
+        }
         
-
     },
 
      mounted(){
 
-    }
+     }
 })
 
 
 /* CountDown FUnction */
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
 var x = setInterval(function() {
     var now = new Date().getTime(); 
     var distance = countDownDate - now;

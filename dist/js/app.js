@@ -10,6 +10,7 @@
 var app = new Vue({
   el: "#app",
   data: {
+    email: '',
     headerList: [{
       li: 'Courses'
     }, {
@@ -22,12 +23,12 @@ var app = new Vue({
       li: 'Demos'
     }],
 
-    /* headerIcon: [
-        { i: <i class="fab fa-linkedin"></i>},
-        { i: <i class="fab fa-instagram"></i>},
-        { i: <i class="fab fa-facebook"></i>},
-        { i: <i class="fab fa-twitter"></i>},
-    ], */
+    /*  headerIcon: [
+         { i: 'fab fa-linkedin'},
+         { i: 'fab fa-instagram'},
+         { i: 'fab fa-facebook'},
+         { i: 'fab fa-twitter'},
+     ], */
     footerAbout: [{
       p: 'Masterstudy is Education WordPress theme featured by learning'
     }, {
@@ -60,7 +61,17 @@ var app = new Vue({
       li: 'Typography'
     }]
   },
-  methods: {},
+  methods: {
+    subscribe: function subscribe() {
+      if (this.email.length > 3 && this.email.includes('@')) {
+        alert('🎉 Grazie per esserti iscritto alla NewsLetter 🎉');
+        this.email = '';
+      } else {
+        alert('L\'email inserita è troppo corta o errata! Inseriscine una valida');
+        this.email = '';
+      }
+    }
+  },
   mounted: function mounted() {}
 });
 /* CountDown FUnction */

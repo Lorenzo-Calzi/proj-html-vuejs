@@ -6,20 +6,24 @@
     .bg_img{
         background-image: url('../img/slide-1.jpg');
         background-size: cover;
-        height: 900px;
+        /* height: 900px; */
         background-repeat: no-repeat;
+        height: 80vh;
+        min-height: 690px;
     }
 
     /* Slogan */
     .slogan{
         position: absolute;
-        top: 30%;
-        padding-left: 1000px;
-        /* left: 65%;
-        transform: translate(-50%, -50%); */
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        /* top: 30%;
+        padding-left: 1000px; */
 
         h1{
-            font-size: 80px;
+            /* font-size: 80px; */
+            font-size: 60px;
             line-height: 80px;
 
             strong{
@@ -30,7 +34,8 @@
             margin-top: 30px;
 
             p{
-                font-size: 21px;
+                font-size: 18px;
+                /* font-size: 21px; */
                 line-height: 35px;
                 color: rgb(54, 54, 54);
             }
@@ -60,7 +65,7 @@
 
             span{
                 display: block;
-                font-size: 35px;  
+                font-size: 34px;  
                 font-weight: 500;
                 margin-bottom: 20px;
 
@@ -111,7 +116,8 @@
                     text-align: center;
 
                     span{
-                        font-size: 80px;
+                        font-size: 75px;
+                        font-weight: 700;
                         padding: 0px 30px 20px 30px;
                         color: $white;
                     }

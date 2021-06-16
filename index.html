@@ -25,14 +25,6 @@
 
                 <div class="right_header">
 
-                   <!--  <ul>
-                        <li>Courses</li>
-                        <li>Curse Formats</li>
-                        <li>Add Course <span class="bedge_header">NEW</span></li>
-                        <li>Pages</li>
-                        <li>Demos</li>
-                    </ul> -->
-
                     <ul v-for="item in headerList">
                         <li v-if="item.li === 'Add Course'">
                             {{item.li}} 
@@ -47,7 +39,7 @@
                     </ul>
 
                     <!-- <ul class="icons" v-for="item in headerIcon">
-                        <li>{{i}}</li>
+                        <li><i class='item.i'></i></li>
                     </ul> -->
                     
                     <div class="icons">
@@ -90,8 +82,8 @@
                                 <div>
                                     <span><strong>Limited Sale:</strong> All courses with 55% off</span>
                                     <div class="subscribe">
-                                        <input type="text" placeholder="Enter your E-mail"> 
-                                        <h5>Subscribe</h5>
+                                        <input type="text" v-model="email" placeholder="Enter your E-mail"> 
+                                        <h5 @click="subscribe" @keyup.enter="subscribe">Subscribe</h5>
                                     </div>
                                 </div>
                             </div>

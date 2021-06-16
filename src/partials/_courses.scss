@@ -87,7 +87,7 @@
                     margin-right: 5px;
                 }
                 span{
-                    color: $text_primaty;
+                    color: rgba(34, 34, 34, 1);
                 }
             }
         }
@@ -104,6 +104,7 @@
 
         &:hover{
             cursor: pointer;
+            background-color: rgba(217, 166, 27, 1);
         }
     }
 }
