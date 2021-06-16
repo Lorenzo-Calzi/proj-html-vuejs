@@ -43,19 +43,29 @@
   padding-bottom: 10px;
   font-size: 20px;
   font-weight: 500;
-  border-bottom: 1px solid white;
-}
-#site_header nav .right_header ul li:hover {
   cursor: pointer;
-  border-bottom: 1px solid #f3c035;
+  position: relative;
 }
-#site_header nav .right_header ul i {
-  font-size: 10px;
+#site_header nav .right_header ul li i {
+  font-size: 11px;
   position: absolute;
-  bottom: 10px;
-  left: 50px;
+  bottom: -3px;
+  left: 46%;
   color: #f3c035;
+  text-align: center;
   display: none;
+}
+#site_header nav .right_header ul li:hover i {
+  display: block;
+}
+#site_header nav .right_header ul li:hover:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 2px solid #f3c035;
+  background-color: #f3c035;
 }
 #site_header nav .right_header .bedge_header {
   border-radius: 5px;

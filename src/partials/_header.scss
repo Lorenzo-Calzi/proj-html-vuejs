@@ -28,19 +28,30 @@
                     padding-bottom: 10px;
                     font-size: 20px;
                     font-weight: 500;
-                    border-bottom: 1px solid $white;
-                    &:hover{
-                        cursor: pointer;
-                        border-bottom: 1px solid $senape;
+                    cursor: pointer;
+                    position: relative;
+
+                    i{
+                        font-size: 11px;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 46%;
+                        color: $senape;
+                        text-align: center;
+                        display: none;
                     }
-                }
-                i{
-                    font-size: 10px;
-                    position: absolute;
-                    bottom: 10px;
-                    left: 50px;
-                    color: $senape;
-                    display: none;
+                    &:hover i{
+                        display: block;
+                    }
+                    &:hover:after {
+                        content: "";
+                        position: absolute;
+                        left: 25%;
+                        right: 25%;
+                        bottom: 0;
+                        border: 2px solid $senape;
+                        background-color: $senape;
+                    }
                 }
             }
             .bedge_header{
