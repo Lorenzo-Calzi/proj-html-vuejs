@@ -26,7 +26,6 @@
                 color: $senape;
             }
         }
-
         .paragraph_jumbo{
             margin-top: 30px;
 
@@ -69,7 +68,6 @@
                     color: $white;
                 }
             }
-
             .subscribe{
                 display: flex;
                 position: relative;
@@ -77,25 +75,25 @@
                 margin-top: 30px;
 
                 input{
-                    padding: 20px;
+                    padding: 23px;
                     width: 600px;
-                    border-radius: 30px;
+                    border-radius: 40px;
                     border: none;
-                    outline: none;                }
+                    outline: none;                
+                }
                 h5{
-                    border-radius: 30px;
-                    padding: 19px;
+                    border-radius: 40px;
+                    padding: 22px 30px;
                     position: absolute;
                     left: 85%;
                     background-color: rgba(45, 70, 73, 1);
                     color: $white;
                     text-transform: uppercase;
-                    font-weight: 400;   
+                    font-weight: 400;  
+                    cursor: pointer; 
                 }
-            }
-            
+            }     
         }
-
         .right_cd{
             width: 50%;
             height: 100%;

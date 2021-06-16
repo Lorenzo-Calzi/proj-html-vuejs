@@ -151,21 +151,22 @@
   margin-top: 30px;
 }
 .jumbotron .count_down .left_cd .subscribe input {
-  padding: 20px;
+  padding: 23px;
   width: 600px;
-  border-radius: 30px;
+  border-radius: 40px;
   border: none;
   outline: none;
 }
 .jumbotron .count_down .left_cd .subscribe h5 {
-  border-radius: 30px;
-  padding: 19px;
+  border-radius: 40px;
+  padding: 22px 30px;
   position: absolute;
   left: 85%;
   background-color: #2d4649;
   color: white;
   text-transform: uppercase;
   font-weight: 400;
+  cursor: pointer;
 }
 .jumbotron .count_down .right_cd {
   width: 50%;
@@ -255,7 +256,10 @@
 }
 .sign .right_sign {
   width: 50%;
+}
+.sign .right_sign p {
   line-height: 30px;
+  width: 650px;
 }
 
 .courses {
@@ -275,9 +279,9 @@
   justify-content: center;
 }
 .courses .cards .card {
-  width: 300px;
+  width: 350px;
   background-color: white;
-  margin: 30px;
+  margin: 20px;
 }
 .courses .cards .card:hover img {
   filter: brightness(0.6);
@@ -286,8 +290,8 @@
   display: block;
 }
 .courses .cards .card .hover_price {
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 230px;
   position: relative;
   margin-bottom: 20px;
 }
@@ -314,12 +318,12 @@
   border-radius: 3px;
 }
 .courses .cards .card img {
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 230px;
   margin-bottom: 20px;
 }
 .courses .cards .card p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -348,18 +352,19 @@
 }
 .courses button {
   margin-top: 30px;
-  padding: 15px 15px;
+  padding: 14px 22px;
   border-radius: 30px;
+  font-weight: 600;
   color: white;
   background-color: #f2b91e;
   border: none;
+  font-family: "Roboto Slab", serif;
 }
 .courses button:hover {
   cursor: pointer;
 }
 
 .bg_book {
-  width: 100%;
   height: 700px;
   background-image: url("../img/slider_1-1917x607-1914x606.jpg");
   background-size: cover;
@@ -376,16 +381,18 @@
 }
 .bg_book .left_book h3 {
   color: #f2b91e;
-  font-size: 40px;
+  font-size: 45px;
 }
 .bg_book .left_book p {
+  width: 700px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-style: italic;
   line-height: 40px;
 }
 .bg_book .left_book img {
-  margin-top: 20px;
+  cursor: pointer;
+  margin-top: 30px;
 }
 .bg_book .right_book {
   width: 50%;
@@ -412,6 +419,7 @@
   font-size: 30px;
   margin: 20px;
   color: #585858;
+  cursor: pointer;
 }
 
 .why {
@@ -453,6 +461,8 @@
   margin-bottom: 20px;
 }
 .why .why_cards .why_card p {
+  width: 430px;
+  color: #a1a1a1;
   line-height: 30px;
 }
 
@@ -470,6 +480,7 @@
   margin: 30px;
 }
 .bg_data .data i {
+  padding-top: 10px;
   font-size: 50px;
   margin-right: 20px;
   color: white;
@@ -481,7 +492,7 @@
 }
 .bg_data .data h5 {
   color: white;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -501,9 +512,9 @@
   align-items: center;
 }
 .students .slider i {
-  font-size: 30px;
+  font-size: 27px;
   margin: 20px;
-  color: #3a3a3a;
+  color: #474747;
   cursor: pointer;
 }
 .students .slider .img_slider {
@@ -511,12 +522,12 @@
   align-items: center;
 }
 .students .slider .img_slider img {
-  height: 80px;
+  height: 70px;
   border-radius: 50%;
   margin: 15px;
 }
 .students h3 {
-  font-size: 20px;
+  font-size: 17px;
   margin: 5px;
 }
 .students .stars {
@@ -526,9 +537,11 @@
   color: #f2b91e;
 }
 .students p {
+  width: 770px;
+  margin: auto;
   font-size: 18px;
-  line-height: 30px;
-  color: #414141;
+  line-height: 35px;
+  color: #505050;
 }
 
 #site_footer {

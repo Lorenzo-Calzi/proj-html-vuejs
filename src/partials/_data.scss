@@ -11,12 +11,12 @@
         align-items: center;
         margin: 30px;
 
-        i{
+        i{  
+            padding-top: 10px;
             font-size: 50px;
             margin-right: 20px;
             color: $white;
         }
-
         span{
             color: rgba(242, 187, 36, 1);;
             font-size: 40px;
@@ -24,7 +24,7 @@
         }
         h5{
             color: $white;
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 400;
         }
     }
