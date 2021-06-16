@@ -1,0 +1,62 @@
+#site_footer{
+    padding-top: 50px;
+    background-color: rgba(242, 185, 30, 1);
+
+    .content_footer{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        .section_content{
+            margin: 20px;
+
+            h3{
+                font-size: 23px;
+                margin-bottom: 25px;
+            }
+            .footer_paragraph{
+                margin-bottom: 20px;
+                p{
+                    line-height: 25px;
+                }
+            }
+            i{
+                font-size: 23px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .footer_list{
+                display: flex;
+                ul{
+                    margin: 0px 20px 0 20px;
+
+                    li{
+                        margin-bottom: 20px;
+
+                        &:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .blog{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            img{
+                height: 100px;
+                margin-right: 10px;
+            }
+            p{
+                font-weight: 600;
+            }
+            span{
+                color: rgba(133, 109, 42, 1);
+            }
+        }
+    }
+}
