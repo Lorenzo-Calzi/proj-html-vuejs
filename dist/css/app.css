@@ -12,13 +12,16 @@
   justify-content: center;
   align-items: center;
 }
+* .container {
+  width: 70%;
+  margin: auto;
+}
 
 #site_header {
   width: 100%;
   color: #33333f;
 }
 #site_header nav {
-  width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -252,8 +255,6 @@
 } */
 .sign {
   display: flex;
-  width: 70%;
-  margin: auto;
   padding-bottom: 100px;
 }
 .sign .flex {
@@ -285,8 +286,6 @@
   padding: 75px 0px 25px 0;
 }
 .courses .cards {
-  width: 70%;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -444,8 +443,6 @@
   margin-bottom: 50px;
 }
 .why .why_cards {
-  width: 70%;
-  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -562,8 +559,6 @@
   background-color: #f2b91e;
 }
 #site_footer .content_footer {
-  width: 70%;
-  margin: auto;
   display: flex;
   justify-content: center;
 }
