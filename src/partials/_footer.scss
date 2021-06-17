@@ -56,12 +56,12 @@
             margin-bottom: 30px;
 
             img{
-                height: 100px;
-                margin-right: 10px;
+                height: 80px;
+                margin-right: 20px;
                 cursor: pointer;
             }
             p{
-                width: 250px;
+                width: 180px;
                 font-weight: 600;
 
                 &:hover{
@@ -70,6 +70,7 @@
                 }
             }
             span{
+                font-size: 13px;
                 color: rgba(133, 109, 42, 1);
             }
         }

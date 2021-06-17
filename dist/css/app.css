@@ -154,7 +154,7 @@
 .jumbotron .count_down .left_cd span {
   display: block;
   font-size: 34px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 .jumbotron .count_down .left_cd span strong {
@@ -561,7 +561,8 @@
   margin: 15px;
 }
 .students h3 {
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 5px;
 }
 .students .stars {
@@ -630,12 +631,12 @@
   margin-bottom: 30px;
 }
 #site_footer .content_footer .blog img {
-  height: 100px;
-  margin-right: 10px;
+  height: 80px;
+  margin-right: 20px;
   cursor: pointer;
 }
 #site_footer .content_footer .blog p {
-  width: 250px;
+  width: 180px;
   font-weight: 600;
 }
 #site_footer .content_footer .blog p:hover {
@@ -643,5 +644,6 @@
   cursor: pointer;
 }
 #site_footer .content_footer .blog span {
+  font-size: 13px;
   color: #856d2a;
 }
