@@ -18,6 +18,11 @@
             margin: 20px;
             color: rgb(71, 71, 71);
             cursor: pointer;
+
+            &:hover{
+                transform: scale(1.1);
+                color: $senape;
+            }
         }
         .img_slider{
             display: flex;
@@ -38,7 +43,7 @@
         margin-bottom: 25px;
 
         i{
-            color: rgba(242, 185, 30, 1);
+            color: $senape;
         }
     }
     p{
