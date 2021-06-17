@@ -74,23 +74,19 @@ var app = new Vue({
       }
     },
     next: function next() {
-      if (this.counter === 0 || this.counter === 1) {
-        this.counter += 1;
-      } else {
-        this.counter = 0;
-      }
+      var img = this.listImg[2];
+      this.listImg.pop();
+      this.listImg.unshift(img);
     },
     prev: function prev() {
-      if (this.counter === 1 || this.counter === 2) {
-        this.counter -= 1;
-      } else {
-        this.counter = 2;
-      }
+      var img = this.listImg[0];
+      this.listImg.shift();
+      this.listImg.push(img);
     }
   },
   mounted: function mounted() {}
 });
-/* CountDown FUnction */
+/* CountDown Function */
 
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 var x = setInterval(function () {

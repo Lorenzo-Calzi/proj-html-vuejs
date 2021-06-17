@@ -521,16 +521,11 @@
                     <!-- Slider -->
                     <div class="slider">
                         <i class="fas fa-arrow-left" @click="prev"></i>
-                        <!-- <div class="img_slider">
-                            <img src="./dist/img/1-100x100.jpg" alt="immagine di profilo ragazzo">
-                            <img src="./dist/img/2-100x100.jpg" alt="mmagine di profilo ragazzo" style="height: 95px;">
-                            <img src="./dist/img/4-100x100.jpg" alt="mmagine di profilo ragazza">
-                        </div> -->
 
                         <div class="img_slider">
-                            <img :src="listImg[counter]" alt="immagine di profilo ragazzo" style="height: 110px;">
-                            <!-- <img :src="listImg[counter + 1]" alt="immagine di profilo ragazzo">
-                            <img :src="listImg[counter + 2]" alt="immagine di profilo ragazzo"> -->
+                            <img :src="listImg[counter]" alt="immagine di profilo ragazzo">
+                            <img :src="listImg[counter + 1]" alt="immagine di profilo ragazzo"  style="height: 110px;">
+                            <img :src="listImg[counter + 2]" alt="immagine di profilo ragazzo">
                         </div>
                         <i class="fas fa-arrow-right" @click="next"></i>
                     </div>
