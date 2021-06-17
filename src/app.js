@@ -48,20 +48,44 @@ const app = new Vue({
             { li: 'Typography'},
         ],
 
+        counter:0,
+        listImg: [
+            './dist/img/1-100x100.jpg',
+            './dist/img/2-100x100.jpg',
+            './dist/img/4-100x100.jpg'
+        ],
+
 
     },
 
     methods: {
         subscribe(){
             if(this.email.length > 3 && this.email.includes('@')){
-                alert('🎉 Grazie per esserti iscritto alla NewsLetter 🎉')
-                this.email = '';
+                document.querySelector('.subscribe').style.display = 'none';
+                document.querySelector('.message').style.display = 'block';
             } else{
                 alert('L\'email inserita è troppo corta o errata! Inseriscine una valida');
                 this.email = '';
             }
-        }
-        
+        },
+
+        next(){
+            if(this.counter === 0 || this.counter === 1){
+                this.counter += 1;
+            }
+            else{
+                this.counter = 0;
+            }
+        },
+
+        prev(){
+            if(this.counter === 1 || this.counter === 2){
+                this.counter -= 1;
+            }
+            else{
+                this.counter = 2;
+            }
+        }   
     },
 
      mounted(){
