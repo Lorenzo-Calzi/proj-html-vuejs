@@ -14,8 +14,8 @@
     /* Slogan */
     .slogan{
         position: absolute;
-        top: 50%;
-        left: 64%;
+        top: 42%;
+        left: 63%;
         transform: translate(-50%, -50%);
 
         h1{
@@ -60,7 +60,7 @@
 
             span{
                 display: block;
-                font-size: 34px;  
+                font-size: 32px;  
                 font-weight: 600;
                 margin-bottom: 20px;
 
@@ -105,6 +105,7 @@
             display: none;
             font-size: 22px;
             margin-top: 30px;
+            padding-left: 13px;
             color: $title;
         }
         .right_cd{
@@ -118,16 +119,21 @@
                 display: flex;
 
                 .time{
+                    width: 120px;
+                    margin: auto;
                     text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
                     span{
                         font-size: 75px;
                         font-weight: 700;
-                        padding: 0px 30px 20px 30px;
                         color: $white;
                     }
                     h5{
-                        font-size: 25px;
+                        font-size: 18px;
                     }
                 }
             }   
@@ -136,55 +142,3 @@
     /* /Count Down */
 
 }
-
-
-
-
-
-/* 
-@media screen and (max-width:1399px){
-    .bg_img{
-        height: 700px;
-    }
-
-    .slogan{
-        top: 50%;
-        left: 61%;
-        transform: translate(-50%, -50%);
-    }
-
-    h1{
-        font-size: 60px;
-        line-height: 60px;
-    }
-
-    p{
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-}
-
-@media screen and (min-width:1400px) {
-
-    .bg_img{
-        height: 900px;
-    }
-
-    .slogan{
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-    }
-
-    h1{
-        font-size: 70px;
-        line-height: 60px;
-    }
-
-    p{
-        font-size: 18px;
-        line-height: 30px;
-    }
-
-} */

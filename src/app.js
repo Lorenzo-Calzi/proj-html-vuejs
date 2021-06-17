@@ -13,13 +13,6 @@ const app = new Vue({
             { li: 'Demos'},
         ],
 
-       /*  headerIcon: [
-            { i: 'fab fa-linkedin'},
-            { i: 'fab fa-instagram'},
-            { i: 'fab fa-facebook'},
-            { i: 'fab fa-twitter'},
-        ], */
-
         footerAbout: [
             { p: 'Masterstudy is Education WordPress theme featured by learning'},
             { p: 'Management System (LMS) for online education.'},
