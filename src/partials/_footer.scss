@@ -26,6 +26,10 @@
                 font-size: 23px;
                 margin: 15px 10px 0px 0px;
                 cursor: pointer;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
             .footer_list{
                 display: flex;
@@ -54,10 +58,16 @@
             img{
                 height: 100px;
                 margin-right: 10px;
+                cursor: pointer;
             }
             p{
                 width: 250px;
                 font-weight: 600;
+
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
             span{
                 color: rgba(133, 109, 42, 1);

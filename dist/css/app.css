@@ -139,6 +139,9 @@ $prova: rgba(58, 53, 51, 1) title footer; */
   cursor: pointer;
   margin: 5px;
 }
+#site_header nav .right_header .icons i:hover {
+  transform: scale(1.1);
+}
 
 .jumbotron {
   width: 100%;
@@ -219,7 +222,7 @@ $prova: rgba(58, 53, 51, 1) title footer; */
   border: none;
   outline: none;
   font-family: "Roboto Slab", serif;
-  box-shadow: 1px 1px 5px 1px #a0a0a0;
+  box-shadow: 1px 1px 5px 1px rgba(170, 170, 170, 0.678);
 }
 .jumbotron .count_down .left_cd .subscribe h5 {
   font-size: 17px;
@@ -232,6 +235,9 @@ $prova: rgba(58, 53, 51, 1) title footer; */
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
+}
+.jumbotron .count_down .left_cd .subscribe h5:hover {
+  background-color: #657b7e;
 }
 .jumbotron .count_down .message {
   display: none;
@@ -463,6 +469,9 @@ $prova: rgba(58, 53, 51, 1) title footer; */
   cursor: pointer;
   margin-top: 30px;
 }
+.bg_book .left_book img:hover {
+  transform: scale(1.1);
+}
 .bg_book .right_book {
   width: 50%;
   position: relative;
@@ -489,6 +498,9 @@ $prova: rgba(58, 53, 51, 1) title footer; */
   margin: 20px;
   color: #585858;
   cursor: pointer;
+}
+.bg_book .right_book .menu i:hover {
+  transform: scale(1.1);
 }
 
 .why {
@@ -639,6 +651,9 @@ $prova: rgba(58, 53, 51, 1) title footer; */
   margin: 15px 10px 0px 0px;
   cursor: pointer;
 }
+#site_footer .content_footer .section_content i:hover {
+  transform: scale(1.1);
+}
 #site_footer .content_footer .section_content .footer_list {
   display: flex;
   justify-content: space-between;
@@ -662,10 +677,15 @@ $prova: rgba(58, 53, 51, 1) title footer; */
 #site_footer .content_footer .blog img {
   height: 100px;
   margin-right: 10px;
+  cursor: pointer;
 }
 #site_footer .content_footer .blog p {
   width: 250px;
   font-weight: 600;
+}
+#site_footer .content_footer .blog p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 #site_footer .content_footer .blog span {
   color: #856d2a;

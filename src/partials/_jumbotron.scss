@@ -82,7 +82,7 @@
                     border: none;
                     outline: none; 
                     font-family: 'Roboto Slab', serif;   
-                    box-shadow: 1px 1px 5px 1px rgb(160, 160, 160);            
+                    box-shadow: 1px 1px 5px 1px rgba(170, 170, 170, 0.678);            
                 }
                 h5{
                     font-size: 17px;
@@ -96,6 +96,9 @@
                     font-weight: 400;  
                     cursor: pointer;
 
+                    &:hover{
+                        background-color: rgb(101, 123, 126);
+                    }
                 }
             }     
         }
